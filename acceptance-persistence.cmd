@@ -4,7 +4,7 @@ SETLOCAL
 set MSPEC_RUNNER_X86="src/packages/Machine.Specifications-Signed.0.5.3.0/tools/mspec-x86-clr4.exe"
 
 ECHO === Building ===
-"C:/WINDOWS/Microsoft.NET/Framework/v4.0.30319/msbuild.exe" /nologo /verbosity:quiet src/EventStore.sln /p:Configuration=Debug
+"C:/WINDOWS/Microsoft.NET/Framework/v4.0.30319/msbuild.exe" /nologo /verbosity:quiet src/EventStore.sln /p:Configuration=Debug /p:Platform="Any CPU"
 
 ECHO === In Memory ===
 CALL :run_test InMemoryPersistence
